@@ -1,0 +1,18 @@
+variaves
+
+contador, numero : inteiro
+nome_do_time : caractere
+
+contador : 1
+
+inicio
+
+escreva("Qual o nome do seu time? ") 
+leia(nome_do_time)
+para contador 1 até 5, faça:
+    escreva("Liberando ticket", contador)
+    escreva("Ticket", nome_do_time, contador, "liberado. ")
+    contador <- contador + 1
+fimpara
+
+fimalgoritmo

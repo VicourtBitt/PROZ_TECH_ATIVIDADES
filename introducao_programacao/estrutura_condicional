@@ -1,0 +1,35 @@
+variaveis
+
+area_terrea : caractere
+primeiro_andar : caractere
+area_externa : caractere
+com_animais : lógico
+com_fumante : lógico
+tamanho_do_grupo : inteiro
+
+area_terrea : "Térreo"
+area_externa : "Área Externa"
+primeiro_andar : "1° Andar"
+
+início
+
+escreva("Sejam bem vindos ao restaurante ProzBrownies.")
+escreva("Responda as seguintes perguntas:")
+escreva("Possuem animais de estimação acompanhando? [V]-[F]")
+leia(com_animais)
+escreva("O grupo possuí algum fumante? [V]-[F]")
+leia(com_fumante)
+escreva("Qual o tamanho do grupo? (em números)")
+escreva("Analisando melhor local. ")
+
+se com_animais = Verdadeiro ou com_fumante = Verdadeiro então
+    escreva("O melhor local de alocação é o ", area_externa)
+senao
+    se tamanho_do_grupo >= 5 então
+        escreva("O melhor local de alocação é o ", primeiro_andar)
+    senao
+        escreva("O melhor local de alocação é o ", area_terrea)
+    fimse
+fimse
+
+fimalgoritmo
