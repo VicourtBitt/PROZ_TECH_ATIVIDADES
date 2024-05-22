@@ -30,6 +30,7 @@ def jogo_da_forca(palavra=rd.choice(palavras)):
                 palavra_incompleta += '*'
 
         print('Palavra formada:', palavra_incompleta)
+        print('\n')
 
         if palavra_incompleta == palavra_completa:
             print('Parabéns. A palavra era:', palavra_completa)
